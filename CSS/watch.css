@@ -1,0 +1,52 @@
+body {
+    background-color: #121212;
+    /* Dark background for a cinematic feel */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: red;
+    /* Gold color for text */
+    font-family: 'Arial', sans-serif;
+    /* Clean font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* Space between title and iframe */
+    text-align: center;
+    font-size: 2.5em;
+    /* Larger title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Shadow for depth */
+}
+
+iframe {
+    border: none;
+    /* Remove default border */
+    width: 90vw;
+    /* Responsive width */
+    height: 80vh;
+    /* Responsive height */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    /* Shadow for depth */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        /* Adjust title size for smaller screens */
+    }
+
+    iframe {
+        height: 60vh;
+        /* Adjust iframe height for smaller screens */
+    }
+}
